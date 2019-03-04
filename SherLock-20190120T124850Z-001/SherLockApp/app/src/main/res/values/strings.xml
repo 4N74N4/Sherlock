@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SecAware</string>
+    <string name="appEmail">bgu.mobile@gmail.com</string>
+    <string name="configFolder">SherLock</string>
+    <string name="app_version">Version: </string>
+
+    <!-- Facebook app id -->
+    <string name="app_id">415235841912818</string>
+    <!-- Error messages -->
+    <string name="congeor_welcome">Welcome to</string>
+    <string name="congeorapp_network_error">Cannot connect to server</string>
+    <string name="congeorapp_network_error_1">
+    \n\n(1) Check network connection.\n(2) If the problem persists,\nContact: bgu.mobile@gmail.com.\n
+    </string>
+    <string name="congeorapp_mult_devices_error">Multiple devices registration error!</string>
+    <string name="congeorapp_user_not_in_exp">User not in experiment, Contact\nbgu.mobile@gmail.com</string>
+    <string name="congeorapp_reg_failed">Contact: bgu.mobile@gmail.com</string>
+    <!-- info messages -->
+    <string name="congeorapp_successful_registration">Registration Successful</string>
+    <string name="congeorapp_update_version">Please download the latest version:</string>
+    <string name="update_version_title">קיימת גרסה מעודכנת של האפליקציה</string>
+    <string name="update_version_download">האם ברצונך להוריד אותה כעת ?</string>
+</resources>

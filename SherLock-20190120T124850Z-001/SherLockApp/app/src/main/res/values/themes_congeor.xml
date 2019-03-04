@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Congeor" parent="@style/_Congeor"/>
+
+  <style name="_Congeor" parent="android:Theme.Holo.Light">
+
+    <item name="android:editTextBackground">@drawable/congeor_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#992f71e6</item>
+    <item name="android:textSelectHandleLeft">@drawable/congeor_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/congeor_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/congeor_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewCongeor</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/congeor_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/congeor_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonCongeor</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonCongeor</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerCongeor</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarCongeor</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarCongeor</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarCongeor</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigCongeor</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallCongeor</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleCongeor</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/congeor_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/congeor_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/congeor_fastscroll_thumb_holo</item>
+
+      <!-- ab style -->
+
+      <item name="android:actionBarItemBackground">@drawable/selectable_background_congeor</item>
+      <item name="android:popupMenuStyle">@style/PopupMenu.Congeor</item>
+      <item name="android:dropDownListViewStyle">@style/DropDownListView.Congeor</item>
+      <item name="android:actionBarTabStyle">@style/ActionBarBrown</item>
+      <item name="android:actionDropDownStyle">@style/DropDownNav.Congeor</item>
+      <item name="android:actionBarStyle">@style/ActionBar.Solid.Congeor</item>
+      <item name="android:actionModeBackground">@drawable/cab_background_top_congeor</item>
+      <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_congeor</item>
+      <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Congeor</item>
+
+  </style>
+
+
+</resources>

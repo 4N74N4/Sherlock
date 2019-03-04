@@ -1,0 +1,572 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\5011f59e590907337c5bb0d28ee7b283\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\2e20a75e5ca1ff00fae7a4ee8fcbf937\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ab0bdb183e920e9e2caf6cad1af9a9a9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\70406fc3e78fae8d8a3b273f389d1102\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d785be3d111ea790f532468857568c6c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\a5d3779cb1cbb9f5d3000bfd0353cb5a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\00d309b52a8ad74e9aed7730af567241\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\f183645c5bde322668009e4121413b93\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c5dbe6baef87825dd926f8b8d6a81562\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9ccebb60254fed30f3650ec67a131784\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\243f5162fe56198a8af8161b4cec98d0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\6c17d4b3357b01bd9ae1b51ad045c4df\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a9bb6de8ce6279882cbf0423689fb9e7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c72c69f5df33d0560cddcda026ff0032\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\bf53727e9a56dd136eff1ff87df29daf\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3ce2ef9f08f343eb95b5a3d058c9c769\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\6ffdbd51e80839b2e7e92e0bc3a55f46\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\498569fe874c296b52c1506dcd90fa65\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\381a0b0be85f93e252fefa0944879a4a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\10f7dff2e40f5c9974159e935a66eeb0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ce078a6483c4cad3fe35ff067783efd2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\423f3c93ea9b83f19fb7b25dd580b8f1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d7330cea15d9fb824ea626fc6c9e54f3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0f6a54c1b3aa27441c2d030e9658c977\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ebed99b5955ae6377694949250e19290\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:1-149:12
+	package
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:4:11-48
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:3:11-38
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:2:11-35
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.INTERNET
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.BATTERY_STATS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:10:22-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:13:5-78
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:15:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:16:22-73
+uses-permission#android.permission.READ
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:18:5-62
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:18:22-60
+uses-permission#com.android.browser.permission.READ_HISTORY_BOOKMARKS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:19:5-92
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:19:22-90
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:21:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:22:5-73
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:22:22-71
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:23:22-69
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:24:5-70
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:24:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:25:22-64
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:26:5-71
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:26:22-69
+uses-permission#com.android.email.permission.ACCESS_PROVIDER
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:27:5-83
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:27:22-81
+uses-permission#com.google.android.gm.permission.READ_CONTENT_PROVIDER
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:29:5-93
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:29:22-91
+uses-permission#android.permission.CAPTURE_AUDIO_OUTPUT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:32:5-78
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:32:22-76
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:33:5-70
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:33:22-68
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:36:5-73
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:36:22-71
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:37:5-79
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:37:22-77
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:38:5-73
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:38:22-71
+uses-permission#android.permission.READ_SYNC_STATS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:39:5-73
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:39:22-71
+uses-permission#android.permission.READ_SYNC_SETTINGS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:40:5-76
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:40:22-74
+uses-permission#android.permission.WRITE_SYNC_SETTINGS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:41:5-77
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:41:22-75
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:42:5-74
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:42:22-72
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:43:5-67
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:43:22-65
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:44:5-93
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:44:22-91
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:45:5-81
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:45:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:46:5-66
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:46:22-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:47:5-78
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:47:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:48:5-80
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:48:22-77
+uses-permission#android.permission.BROADCAST_PACKAGE_CHANGED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:50:5-84
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:50:22-81
+uses-permission#android.permission.BROADCAST_PACKAGE_ADDED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:51:5-82
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:51:22-79
+uses-feature#android.hardware.sensor.light
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:52:5-90
+	android:required
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:52:64-88
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:52:19-63
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:53:5-98
+	android:required
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:53:72-96
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:53:19-71
+uses-feature#android.hardware.sensor.proximity
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:54:5-94
+	android:required
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:54:68-92
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:54:19-67
+uses-feature#android.hardware.sensor.gyroscope
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:55:5-94
+	android:required
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:55:68-92
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:55:19-67
+uses-feature#android.hardware.sensor.compass
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:56:5-92
+	android:required
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:56:66-90
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:56:19-65
+uses-feature#android.hardware.sensor.temperature
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:57:5-96
+	android:required
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:57:70-94
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:57:19-69
+application
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:60:5-148:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c72c69f5df33d0560cddcda026ff0032\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c72c69f5df33d0560cddcda026ff0032\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\bf53727e9a56dd136eff1ff87df29daf\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\bf53727e9a56dd136eff1ff87df29daf\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c72c69f5df33d0560cddcda026ff0032\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:60:54-78
+	android:largeHeap
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:60:164-188
+	android:icon
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:60:18-53
+	android:theme
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:60:79-109
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:60:110-163
+meta-data#com.google.android.gms.version
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:61:9-92
+	android:value
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:61:66-89
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:61:20-65
+activity#com.bgu.congeor.sherlockapp.MainActivity
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:62:9-68:20
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:62:138-168
+	android:configChanges
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:62:76-137
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:62:19-74
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:63:13-67:29
+category#android.intent.category.DEFAULT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:64:17-75
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:64:27-73
+action#android.intent.action.MAIN
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:65:17-68
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:65:25-66
+activity#com.bgu.congeor.sherlockapp.NoInternet
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:71:9-155
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:71:73-97
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:71:123-153
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:71:98-122
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:71:19-72
+activity#com.bgu.congeor.sherlockapp.ErrorMultipleDevices
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:72:9-166
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:72:83-108
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:72:134-164
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:72:109-133
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:72:19-82
+activity#com.bgu.congeor.sherlockapp.UpdateVersion
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:73:9-158
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:73:76-100
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:73:126-156
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:73:101-125
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:73:19-75
+activity#com.bgu.congeor.sherlockapp.LoginActivity
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:75:9-158
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:75:76-100
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:75:126-156
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:75:101-125
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:75:19-75
+activity#com.bgu.congeor.sherlockapp.WelcomeScreenTry
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:76:9-81:20
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:76:79-103
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:76:129-159
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:76:104-128
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:76:19-78
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:77:13-80:29
+category#android.intent.category.LAUNCHER
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:79:17-76
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:79:27-74
+activity#com.bgu.congeor.sherlockapp.RegistrationSuccessful
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:83:9-167
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:83:85-109
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:83:135-165
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:83:110-134
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:83:19-84
+activity#com.bgu.congeor.sherlockapp.RegistrationFailed
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:84:9-163
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:84:81-105
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:84:131-161
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:84:106-130
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:84:19-80
+activity#com.bgu.congeor.sherlockapp.UserNotInExperiment
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:85:9-164
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:85:82-106
+	android:launchMode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:85:132-162
+	android:noHistory
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:85:107-131
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:85:19-81
+activity#com.bgu.congeor.sherlockapp.MoriartyDialog
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:86:9-51
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:86:19-49
+activity#com.bgu.congeor.sherlockapp.GpsDialog
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:87:9-46
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:87:19-44
+activity#com.bgu.congeor.sherlockapp.DataDialog
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:88:9-47
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:88:19-45
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:89:9-91:50
+	android:value
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:91:17-47
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:90:17-62
+service#edu.mit.media.funf.FunfManager
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:93:9-65
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:93:18-63
+service#com.bgu.agent.sensors.ActivityRecognition.ActivityRecognitionService
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:94:9-103
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:94:18-101
+service#com.bgu.congeor.sherlockapp.intentservices.SendToServerService2$SendRunnable
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:95:9-84
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:95:18-82
+service#com.bgu.congeor.sherlockapp.intentservices.SensorService
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:96:9-64
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:96:18-62
+receiver#com.bgu.congeor.sherlockapp.intentservices.AgentBroadcastReceiver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:98:9-107:20
+	android:enabled
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:98:100-122
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:98:19-99
+intent-filter#action:name:android.accounts.AccountAuthenticator+action:name:android.intent.action.ACTION_SCREEN_ON+action:name:android.intent.action.BATTERY_CHANGED+action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.DOCK_EVENT+action:name:android.intent.action.USER_PRESENT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:99:13-106:29
+action#android.intent.action.BATTERY_CHANGED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:100:17-79
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:100:25-77
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:101:17-78
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:101:25-76
+action#android.intent.action.DOCK_EVENT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:102:17-74
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:102:25-72
+action#android.intent.action.ACTION_SCREEN_ON
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:103:17-80
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:103:25-78
+action#android.intent.action.USER_PRESENT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:104:17-76
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:104:25-74
+action#android.accounts.AccountAuthenticator
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:105:17-79
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:105:25-77
+receiver#com.bgu.agent.sensors.EventBaseProbes.AppChangedReceiver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:109:9-117:20
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:109:19-91
+intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_CHANGED+action:name:android.intent.action.PACKAGE_REMOVED+action:name:android.intent.action.PACKAGE_REPLACED+data:scheme:package
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:110:13-116:29
+	android:priority
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:110:28-50
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:111:17-79
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:111:25-77
+action#android.intent.action.PACKAGE_CHANGED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:112:17-79
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:112:25-77
+action#android.intent.action.PACKAGE_ADDED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:113:17-77
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:113:25-75
+action#android.intent.action.PACKAGE_REPLACED
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:114:17-80
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:114:25-78
+data
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:115:17-49
+	android:scheme
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:115:23-47
+receiver#com.bgu.congeor.sherlockapp.intentservices.SendToServerService
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:118:9-98
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:118:19-96
+receiver#com.bgu.congeor.sherlockapp.intentservices.SendToServerService2
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:119:9-99
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:119:19-97
+receiver#com.bgu.agent.sensors.EventBaseProbes.UserPresentReceiver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:120:9-124:20
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:120:19-91
+intent-filter#action:name:android.intent.action.USER_PRESENT
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:121:13-123:29
+receiver#com.bgu.congeor.sherlockapp.RestartFunfReciver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:125:9-129:20
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:125:19-53
+intent-filter#action:name:com.bgu.congeor.sherlockapp.RestartFunfReciver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:126:13-128:29
+action#com.bgu.congeor.sherlockapp.RestartFunfReciver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:127:17-88
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:127:25-86
+receiver#edu.mit.media.funf.AlarmReciever
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:130:9-95
+	android:process
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:130:67-92
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:130:19-66
+receiver#com.bgu.congeor.sherlockapp.MoriartyReciver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:131:9-135:20
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:131:19-50
+intent-filter#action:name:com.bgu.congeor.sherlockapp.Moriarty
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:132:17-134:33
+action#com.bgu.congeor.sherlockapp.Moriarty
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:133:21-82
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:133:29-80
+receiver#com.bgu.congeor.sherlockapp.GpsReceiver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:136:9-140:20
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:136:19-46
+intent-filter#action:name:com.bgu.congeor.sherlockapp.gps
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:137:9-139:25
+action#com.bgu.congeor.sherlockapp.gps
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:138:13-69
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:138:21-67
+receiver#com.bgu.congeor.sherlockapp.DataDialogReceiver
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:141:9-145:24
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:141:19-53
+intent-filter#action:name:com.bgu.congeor.sherlockapp.DataNotification
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:142:13-144:29
+action#com.bgu.congeor.sherlockapp.DataNotification
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:143:17-86
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:143:25-84
+service#com.bgu.congeor.sherlockapp.intentservices.CongeorDataService
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:146:9-96
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml:146:18-94
+uses-sdk
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\5011f59e590907337c5bb0d28ee7b283\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\5011f59e590907337c5bb0d28ee7b283\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\2e20a75e5ca1ff00fae7a4ee8fcbf937\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\2e20a75e5ca1ff00fae7a4ee8fcbf937\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ab0bdb183e920e9e2caf6cad1af9a9a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ab0bdb183e920e9e2caf6cad1af9a9a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\70406fc3e78fae8d8a3b273f389d1102\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\70406fc3e78fae8d8a3b273f389d1102\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d785be3d111ea790f532468857568c6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d785be3d111ea790f532468857568c6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\a5d3779cb1cbb9f5d3000bfd0353cb5a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\a5d3779cb1cbb9f5d3000bfd0353cb5a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\00d309b52a8ad74e9aed7730af567241\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\00d309b52a8ad74e9aed7730af567241\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\f183645c5bde322668009e4121413b93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\f183645c5bde322668009e4121413b93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c5dbe6baef87825dd926f8b8d6a81562\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c5dbe6baef87825dd926f8b8d6a81562\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9ccebb60254fed30f3650ec67a131784\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9ccebb60254fed30f3650ec67a131784\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\243f5162fe56198a8af8161b4cec98d0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\243f5162fe56198a8af8161b4cec98d0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\6c17d4b3357b01bd9ae1b51ad045c4df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\6c17d4b3357b01bd9ae1b51ad045c4df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a9bb6de8ce6279882cbf0423689fb9e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a9bb6de8ce6279882cbf0423689fb9e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c72c69f5df33d0560cddcda026ff0032\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c72c69f5df33d0560cddcda026ff0032\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\bf53727e9a56dd136eff1ff87df29daf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\bf53727e9a56dd136eff1ff87df29daf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3ce2ef9f08f343eb95b5a3d058c9c769\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3ce2ef9f08f343eb95b5a3d058c9c769\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\6ffdbd51e80839b2e7e92e0bc3a55f46\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\6ffdbd51e80839b2e7e92e0bc3a55f46\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\498569fe874c296b52c1506dcd90fa65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\498569fe874c296b52c1506dcd90fa65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\381a0b0be85f93e252fefa0944879a4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\381a0b0be85f93e252fefa0944879a4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\10f7dff2e40f5c9974159e935a66eeb0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\10f7dff2e40f5c9974159e935a66eeb0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ce078a6483c4cad3fe35ff067783efd2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ce078a6483c4cad3fe35ff067783efd2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\423f3c93ea9b83f19fb7b25dd580b8f1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\423f3c93ea9b83f19fb7b25dd580b8f1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d7330cea15d9fb824ea626fc6c9e54f3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d7330cea15d9fb824ea626fc6c9e54f3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0f6a54c1b3aa27441c2d030e9658c977\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0f6a54c1b3aa27441c2d030e9658c977\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ebed99b5955ae6377694949250e19290\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ebed99b5955ae6377694949250e19290\AndroidManifest.xml:20:5-44
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\app\src\main\AndroidManifest.xml

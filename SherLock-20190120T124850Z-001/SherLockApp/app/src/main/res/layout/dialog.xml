@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+
+    <TextView
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:text="You didn&apos;t sent data for more then 3 days please do a force upload"
+            android:id="@+id/textView5" android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/Header"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go for Sherlock"
+            android:id="@+id/sherlock" android:layout_gravity="right"
+             android:layout_alignTop="@+id/later"
+            android:layout_alignEnd="@+id/textView5"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do it later"
+            android:id="@+id/later"
+            android:layout_below="@+id/textView5" android:layout_alignParentStart="true"
+            android:layout_marginTop="46dp"/>
+</RelativeLayout>

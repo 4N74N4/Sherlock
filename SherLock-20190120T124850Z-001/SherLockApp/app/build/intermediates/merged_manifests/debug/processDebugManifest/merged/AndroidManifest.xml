@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bgu.congeor.sherlockapp"
+    android:versionCode="62"
+    android:versionName="2.4.2" >
+
+    <uses-sdk android:minSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_CONTENT_PROVIDER" />
+
+    <!-- for Audio probes -->
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- uses-permission android:name="android.permission.BROADCAST_PACKAGE_REMOVED" / -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.light"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.temperature"
+        android:required="false" />
+    <!-- android:name=".congeorapp.CongeorApp" -->
+    <application
+        android:name="com.bgu.congeor.sherlockapp.CongeorApp"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/sherlock1a"
+        android:label="SherLock"
+        android:largeHeap="true"
+        android:testOnly="true"
+        android:theme="@style/Congeor" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="4030500" />
+
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="com.bgu.congeor.sherlockapp.FullRegistrationActivity" android:launchMode="singleTop"/> -->
+        <!-- <activity android:name="com.facebook.LoginActivity" android:label="FBLogin"/> -->
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.NoInternet"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.ErrorMultipleDevices"
+            android:label="sherlockr"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.UpdateVersion"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <!-- <activity android:name="sherlockappelcomeScreen" android:label="Net Monitor" android:noHistory="true" android:launchMode="singleTop"> -->
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.LoginActivity"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.WelcomeScreenTry"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.RegistrationSuccessful"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.RegistrationFailed"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.bgu.congeor.sherlockapp.UserNotInExperiment"
+            android:label="sherlock"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity android:name="com.bgu.congeor.sherlockapp.MoriartyDialog" />
+        <activity android:name="com.bgu.congeor.sherlockapp.GpsDialog" />
+        <activity android:name="com.bgu.congeor.sherlockapp.DataDialog" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <service android:name="edu.mit.media.funf.FunfManager" />
+        <service android:name="com.bgu.agent.sensors.ActivityRecognition.ActivityRecognitionService" />
+        <service android:name="com.bgu.congeor.sherlockapp.intentservices.SendToServerService2$SendRunnable" />
+        <service android:name="com.bgu.congeor.sherlockapp.intentservices.SensorService" />
+
+        <receiver
+            android:name="com.bgu.congeor.sherlockapp.intentservices.AgentBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DOCK_EVENT" />
+                <action android:name="android.intent.action.ACTION_SCREEN_ON" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bgu.agent.sensors.EventBaseProbes.AppChangedReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bgu.congeor.sherlockapp.intentservices.SendToServerService" />
+        <receiver android:name="com.bgu.congeor.sherlockapp.intentservices.SendToServerService2" />
+        <receiver android:name="com.bgu.agent.sensors.EventBaseProbes.UserPresentReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bgu.congeor.sherlockapp.RestartFunfReciver" >
+            <intent-filter>
+                <action android:name="com.bgu.congeor.sherlockapp.RestartFunfReciver" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="edu.mit.media.funf.AlarmReciever"
+            android:process=":remote" />
+        <receiver android:name="com.bgu.congeor.sherlockapp.MoriartyReciver" >
+            <intent-filter>
+                <action android:name="com.bgu.congeor.sherlockapp.Moriarty" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bgu.congeor.sherlockapp.GpsReceiver" >
+            <intent-filter>
+                <action android:name="com.bgu.congeor.sherlockapp.gps" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bgu.congeor.sherlockapp.DataDialogReceiver" >
+            <intent-filter>
+                <action android:name="com.bgu.congeor.sherlockapp.DataNotification" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.bgu.congeor.sherlockapp.intentservices.CongeorDataService" />
+        <!-- <service android:name="com.bgu.congeor.sherlockapp.intentservices.SendToServerService" android:label="stss"/> -->
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:phoneNumber="false"
+        android:background="@android:color/transparent"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:editable="false"
+        android:gravity="center"
+        android:textColor="#ffc65e20"
+        android:id="@+id/textView"
+        android:paddingTop="2dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructionList"
+        android:clickable="false"
+        android:divider="@null"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Early Data Upload over Wifi"
+        android:id="@+id/sendButton"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendButton"
+        android:textSize="35dp"
+        android:id="@+id/versionView"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:visibility="invisible">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/autoupload"
+
+            android:textOn=" ON"
+            android:layout_below="@+id/uploadtxt"
+            android:textOff=" OFF"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periodic Update "
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:id="@+id/uploadtxt"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

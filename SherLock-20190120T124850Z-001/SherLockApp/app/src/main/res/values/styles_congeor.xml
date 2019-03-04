@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AutoCompleteTextViewCongeor" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/congeor_list_selector_holo_light</item>
+        <item name="android:background">@drawable/congeor_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonCongeor" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/congeor_btn_default_holo_light</item>
+    </style>
+
+    <style name="ImageButtonCongeor" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/congeor_btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerCongeor" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/congeor_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/congeor_list_selector_holo_light</item>
+    </style>
+
+    <style name="TabCongeor">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/congeor_tab_indicator_holo</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="ActionBarBrown">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:colorBackground">#ffc65e20</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextCongeor">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item name="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+    <style name="ProgressBarCongeor" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/congeor_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/congeor_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="SeekBarCongeor" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/congeor_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/congeor_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/congeor_scrubber_control_selector_holo_light</item>
+    </style>
+
+    <style name="RatingBarCongeor" parent="android:Widget.Holo.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/congeor_ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/congeor_ratingbar_full_holo_light</item>
+    </style>
+
+    <style name="RatingBarBigCongeor" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/congeor_ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/congeor_ratingbar_holo_light</item>
+    </style>
+
+    <style name="RatingBarSmallCongeor" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/congeor_ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/congeor_ratingbar_small_holo_light</item>
+    </style>
+
+    <style name="ToggleCongeor" parent="android:Widget.Holo.Light.Button.Toggle">
+        <item name="android:background">@drawable/congeor_btn_toggle_holo_light</item>
+    </style>
+
+    <!-- AB style -->
+    <style name="ActionBar.Solid.Congeor" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_background_textured_congeor</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_congeor</item>
+        <item name="android:backgroundSplit">#ffc65e20</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Congeor</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Congeor" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_congeor</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Congeor</item>
+    </style>
+
+    <style name="PopupMenu.Congeor" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_congeor</item>
+    </style>
+
+    <style name="DropDownListView.Congeor" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_congeor</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Congeor" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_congeor</item>
+    </style>
+
+    <style name="DropDownNav.Congeor" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_congeor</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_congeor</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_congeor</item>
+    </style>
+
+    <style name="ProgressBar.Congeor" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_congeor</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Congeor" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_congeor</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Congeor.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Congeor</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Congeor</item>
+    </style>
+
+</resources>

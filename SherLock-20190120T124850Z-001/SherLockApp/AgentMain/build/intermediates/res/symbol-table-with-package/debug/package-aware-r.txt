@@ -1,0 +1,4 @@
+com.bgu.agentmain
+drawable ic_launcher
+layout main
+string app_name

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_centerVertical="true"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <!--<ImageView android:layout_width="match_parent"-->
+               <!--android:layout_height="match_parent"-->
+               <!--android:src="@drawable/congeor_logo"-->
+               <!--android:layout_gravity="center|center_vertical"-->
+               <!--android:padding="20dp"/>-->
+
+    <!--<LinearLayout android:layout_height="wrap_content"-->
+                  <!--android:layout_width="wrap_content"-->
+                  <!--android:layout_gravity="center_vertical|center_horizontal">-->
+
+    <!--<WebView android:layout_height="wrap_content"-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:id="@+id/animatedLogo"/>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true" android:weightSum="1" android:id="@+id/linearLayout">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="50dp" android:textStyle="bold"
+                  android:id="@+id/text1" android:text="SherLock" android:textColor="#2F71C6"
+                  android:textIsSelectable="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dp"
+                  android:textStyle="bold" android:id="@+id/textView2" android:text="ISE deparment at BGU"
+                  android:textColor="#c66e02" android:layout_gravity="center_horizontal"
+                  android:textIsSelectable="false"/>
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:src="@drawable/sherlock1a"
+               android:id="@+id/animatedLogoImg"
+               android:longClickable="true" android:layout_above="@+id/linearLayout"
+               android:layout_centerHorizontal="true"/>
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

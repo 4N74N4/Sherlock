@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/congeor_logo"
+               android:layout_gravity="center"
+               android:padding="20dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Registration Error"
+            android:phoneNumber="false"
+            android:background="@android:color/white"
+            android:textSize="@dimen/Header"
+            android:textStyle="bold"
+            android:editable="false"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congeorapp_mult_devices_error"
+            android:layout_gravity="center"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:layout_gravity="center"
+            android:id="@+id/multipleDevicesExit"
+            android:layout_margin="20dp"/>
+</LinearLayout>

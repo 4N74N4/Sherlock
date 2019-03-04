@@ -1,0 +1,18 @@
+{
+    "output": "com.bgu.agent.data.listeners.FileListener",
+    "sendOn3G": "true",
+
+    "data_server_port": 80,
+
+    "data_server_ip": "https://insert.ip",
+
+    "data_services_base_url": "archiveArtifact/rest/upload",
+    "ID_services_base_url": "archiveArtifact/rest/userId",
+    "coupons_server_port": 80,
+
+    "users_server_port": 80,
+    "users_server_ip": "some.ip",
+    "users_services_base_url": "AppServer/UsersServlet",
+    "experimentId": "2205",
+    "version": "2.4.2"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AgentCommons/AgentCommons.iml" filepath="$PROJECT_DIR$/../AgentCommons/AgentCommons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AgentMain/AgentMain.iml" filepath="$PROJECT_DIR$/../AgentMain/AgentMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ConGeoRProbes/ConGeoRProbes.iml" filepath="$PROJECT_DIR$/../ConGeoRProbes/ConGeoRProbes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DataDistributor/DataDistributor.iml" filepath="$PROJECT_DIR$/../DataDistributor/DataDistributor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SherLockApp.iml" filepath="$PROJECT_DIR$/../SherLockApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funfcoreandroid041.iml" filepath="$PROJECT_DIR$/funfcoreandroid041.iml" />
+    </modules>
+  </component>
+</project>

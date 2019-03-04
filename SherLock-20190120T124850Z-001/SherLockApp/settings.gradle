@@ -1,0 +1,2 @@
+include ':app', ':AgentCommons', ':ConGeoRProbes', ':DataDistributor', ':AgentMain'
+include ':funfcoreandroid041'

@@ -1,0 +1,4 @@
+#Mon Feb 11 00:54:11 IST 2019
+base.0=D\:\\SherLock-20190120T124850Z-001\\SherLockApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex

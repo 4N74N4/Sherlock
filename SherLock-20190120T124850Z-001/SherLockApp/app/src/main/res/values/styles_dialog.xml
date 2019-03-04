@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogWindowTitleCongeor">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/holo_orange_dark</item>
+        <item name="android:horizontalDivider">@android:color/holo_orange_dark</item>
+    </style>
+
+    <style name="ButtonBarAlertDialogCongeor">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:dividerPadding">5dp</item>
+    </style>
+
+    <style name="WindowTitleBackgroundCongeor">
+        <item name="android:colorBackground">#d6d6d6</item>
+    </style>
+<style name="Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">false</item>
+</style>
+    <style name="Dialogs_Congeor" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitleCongeor</item>
+        <item name="android:buttonBarStyle">@style/ButtonBarAlertDialogCongeor</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:buttonBarButtonStyle">@style/ButtonCongeor</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackgroundCongeor</item>
+        <item name="android:color">@android:color/white</item>
+        <!--<item name="android:horizontalDivider">@drawable/dialog_divider</item>-->
+    </style>
+</resources>

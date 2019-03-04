@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:1-33:12
+	package
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:27:7-35
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:29:7-32
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:26:11-69
+	android:versionCode
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:28:7-30
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+application
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:30:5-32:19
+	android:label
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:30:18-38
+receiver#edu.mit.media.funf.AlarmReciever
+ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:31:9-77
+	android:process
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:31:49-74
+	android:name
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml:31:19-48
+uses-sdk
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+		ADDED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml
+		INJECTED from D:\SherLock-20190120T124850Z-001\SherLockApp\funfcoreandroid041\src\main\AndroidManifest.xml

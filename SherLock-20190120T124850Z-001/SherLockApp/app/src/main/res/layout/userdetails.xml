@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_height="fill_parent"
+                  android:layout_width="fill_parent">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings"
+                  android:phoneNumber="false" android:background="@android:color/transparent" android:textSize="@android:dimen/app_icon_size"
+                  android:textStyle="bold" android:editable="false" android:gravity="center" android:textColor="#2F71C6"
+                  android:id="@+id/textView" android:layout_gravity="center_horizontal" android:paddingTop="2dp"/>
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="5"
+                    android:columnCount="2" android:padding="10dp">
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="85dp"
+                    android:gravity="left"
+                    android:text="E-mail:"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="5dp"/>
+            <EditText android:id="@+id/email"
+                      android:layout_height="wrap_content"
+                      android:layout_width="200dp"
+                      android:layout_column="1"
+                      android:layout_row="0"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:enabled="true"
+                      android:text=""/>
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:text="Full Name:"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="5dp" android:visibility="invisible"/>
+            <EditText android:id="@+id/fullName"
+                      android:layout_height="wrap_content"
+                      android:layout_width="200dp"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:enabled="true"
+                      android:text="" android:visibility="invisible"/>
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:text="Phone Number:"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="5dp" android:visibility="invisible"/>
+
+            <EditText android:id="@+id/phone"
+                      android:layout_height="wrap_content"
+                      android:layout_width="200dp"
+                      android:layout_column="1"
+                      android:layout_row="2"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:enabled="true"
+                      android:singleLine="true"
+                      android:text="" android:visibility="invisible"/>
+
+            <!--<fragment android:name="com.bgu.congeor.congeorapp.fragment.FBLoginFragment"-->
+            <!--android:id="@+id/facebookLoginFragment"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_row="3"-->
+            <!--android:layout_columnSpan="2"-->
+            <!--tools:layout="@layout/facebook_login_fragment"/>-->
+
+            <com.facebook.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_columnSpan="2"
+                    android:layout_marginBottom="30dp" />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:id="@+id/submitButton"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center"/>
+
+            <ProgressBar android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/progBar"
+                         android:layout_column="0"
+                         android:layout_row="4"
+                         android:layout_columnSpan="2"
+                         android:layout_gravity="center"
+                         android:visibility="invisible"/>
+
+        </GridLayout>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send To Server"
+                android:id="@+id/sendButton"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center_horizontal"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/debugBtn"
+                android:background="@android:color/transparent"
+                android:paddingLeft="20dp"
+                android:paddingBottom="60dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

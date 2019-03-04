@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/congeor_logo"
+               android:layout_gravity="center"
+               android:padding="20dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/congeorapp_network_error"
+              android:phoneNumber="false" android:background="@android:color/white" android:textSize="@dimen/Header"
+              android:textStyle="bold" android:editable="false" android:gravity="center"
+              android:textColor="@android:color/holo_red_dark" android:id="@+id/textView"
+              android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cannotConnect1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/congeorapp_network_error_1"
+            android:singleLine="false"
+            android:lines="7"
+            android:layout_marginLeft="10pt"
+            android:layout_gravity="center"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/noInternet_okButton"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Error"
+            android:id="@+id/noInternet_sendError" android:layout_gravity="center_horizontal"/>
+</LinearLayout>

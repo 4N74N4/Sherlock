@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent">
+
+    <!--ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/congeor_logo"
+               android:layout_gravity="center"
+               android:padding="20dp"/-->
+
+
+        <com.facebook.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
+        <!--Button android:id="@+id/showAccessTokenBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Show Access Token"
+                android:layout_gravity="center"/-->
+
+</LinearLayout>

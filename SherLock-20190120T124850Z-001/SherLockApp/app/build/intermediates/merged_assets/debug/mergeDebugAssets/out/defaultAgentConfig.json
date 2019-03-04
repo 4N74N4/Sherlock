@@ -1,0 +1,171 @@
+{
+  "agentGeneralConfig": {
+    "sendToServer":
+    [
+      "com.bgu.agent.sensors.GooglePlayServicesLocationProbe",
+      "com.bgu.agent.sensors.BatteryProbe",
+      "com.bgu.agent.sensors.CallInfoProbe",
+      "com.bgu.agent.sensors.SmsInfoProbe",
+      "com.bgu.agent.sensors.ErrorSensor",
+      "com.bgu.agent.sensors.EventBaseProbes.UserPresentProbe",
+      "com.bgu.agent.sensors.WifiProbe",
+      "com.bgu.agent.sensors.TelephonyProbe",
+      "com.bgu.agent.sensors.AudioFeaturesProbe",
+      "edu.mit.media.funf.probe.builtin.CellTowerProbe",
+      "edu.mit.media.funf.probe.builtin.ScreenProbe",
+      "com.bgu.agent.sensors.BluetoothProbe",
+      "edu.mit.media.funf.probe.builtin.HardwareInfoProbe",
+      "com.bgu.agent.sensors.TrafficStatsProbe",
+      "com.bgu.agent.sensors.MotionProbe",
+      "edu.mit.media.funf.probe.builtin.LightSensorProbe",
+      "com.bgu.agent.sensors.OrientationRotationProbe",
+      "com.bgu.agent.sensors.SystemInfoProbe",
+      "com.bgu.agent.sensors.StatusDetailsProbe",
+      "com.bgu.agent.sensors.EventBaseProbes.AllBroadcastProbe",
+      "com.bgu.agent.sensors.MoriartyProbe",
+      "com.bgu.agent.sensors.BrowserInfoProbe",
+      "com.bgu.agent.sensors.EventBaseProbes.AppChangedProbe",
+      "com.bgu.agent.sensors.AppListProbe"
+    ]
+  },
+  "funfSensors": {
+    "@type": "com.bgu.agent.sensors.HierarchicalPipeline",
+    "name": "funfSensors",
+    "archive": {
+      "@schedule": {
+        "interval": 86400
+      }
+    },
+    "version": 1,
+    "data": [
+
+      {
+        "@type": "com.bgu.agent.sensors.ErrorSensor"
+
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GeneralAllMotionProbe",
+        "@schedule": {
+          "interval": 20,
+          "strict": "true"
+        }
+
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GenericAllMotionProbe",
+        "events": ["com.bgu.Motion"],
+        "sensors": [
+          "com.bgu.agent.sensors.OrientationRotationProbe",
+          "com.bgu.agent.sensors.MotionProbe"
+
+        ]
+      },
+      {
+        "@type": "com.bgu.agent.sensors.EventBaseProbes.UserPresentProbe"
+
+      },
+      {
+        "@type": "com.bgu.agent.sensors.EventBaseProbes.AppChangedProbe"
+      },
+      {
+        "@type": "com.bgu.agent.sensors.EventBaseProbes.AllBroadcastProbe"
+      },
+      {
+        "@type": "edu.mit.media.funf.probe.builtin.ScreenProbe"
+
+      },
+      {
+        "@type": "com.bgu.agent.sensors.AppListProbe"
+      },
+      {
+        "@type": "com.bgu.agent.sensors.MoriartyProbe",
+        "@schedule": {
+          "interval": 86300,
+          "strict": "true"
+        }
+      },
+      {
+        "@type": "com.bgu.agent.sensors.CallInfoProbe",
+        "@schedule": {
+          "interval": 3600
+        }
+      },
+      {
+        "@type": "com.bgu.agent.sensors.SmsInfoProbe",
+        "@schedule": {
+          "interval": 3600
+        }
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GeneralSampleProbeT0",
+        "@schedule": {
+          "interval": 86300,
+          "strict": "true"
+        }
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GeneralSampleProbeT1",
+        "@schedule": {
+          "interval": 60,
+          "strict": "true"
+
+        }
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GeneralSampleProbeT3",
+        "@schedule": {
+          "interval": 5,
+          "strict": "true"
+        }
+
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GeneralSampleProbeT2",
+        "@schedule": {
+          "interval": 10,
+          "strict": "true"
+        }
+
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GenericEventBaseProbeT0",
+        "events": ["com.bgu.T0"],
+        "sensors": [
+          "edu.mit.media.funf.probe.builtin.HardwareInfoProbe",
+          "com.bgu.agent.sensors.TelephonyProbe",
+          "com.bgu.agent.sensors.SystemInfoProbe",
+          "com.bgu.agent.sensors.BrowserInfoProbe"
+        ]
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GenericEventBaseProbeT1",
+        "events": ["com.bgu.T1"],
+        "sensors": [
+          "com.bgu.agent.sensors.GooglePlayServicesLocationProbe",
+          "com.bgu.agent.sensors.WifiProbe",
+          "com.bgu.agent.sensors.BluetoothProbe",
+          "edu.mit.media.funf.probe.builtin.CellTowerProbe",
+          "com.bgu.agent.sensors.StatusDetailsProbe"
+        ]
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GenericEventBaseProbeT2",
+        "events": ["com.bgu.T2"],
+        "sensors": [
+          "com.bgu.agent.sensors.AudioFeaturesProbe",
+          "edu.mit.media.funf.probe.builtin.LightSensorProbe"
+
+        ]
+      },
+      {
+        "@type": "com.bgu.agent.sensors.GenericEventBaseProbeT3",
+        "events": ["com.bgu.T3"],
+        "sensors": [
+          "com.bgu.agent.sensors.BatteryProbe",
+          "com.bgu.agent.sensors.TrafficStatsProbe"
+
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,344 @@
+package com.bgu.agent.sensors;
+
+
+import android.content.*;
+import android.util.Log;
+import com.bgu.agent.commons.logging.Logger;
+import com.bgu.congeor.Constants;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import edu.mit.media.funf.Schedule;
+import edu.mit.media.funf.config.Configurable;
+import edu.mit.media.funf.json.IJsonObject;
+import edu.mit.media.funf.probe.Probe;
+import edu.mit.media.funf.time.TimeUtil;
+
+import java.util.*;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: BittonRon
+ * Date: 1/10/14
+ * Time: 2:41 AM
+ * To change this template use File | Settings | File Templates.
+ */
+//Pipe line path:  com.bgu.agent.sensors.GenericEventBaseProbeT1
+
+@Probe.DisplayName("GenericEventBaseProbeT1")
+@Schedule.DefaultSchedule(interval = 0, duration = 0, opportunistic = true)
+public class GenericEventBaseProbeT1 extends SecureBase implements Probe.ContinuousProbe
+{
+
+    Object lock = new Object();
+
+    @Configurable
+    private String[] sensors;
+
+    @Configurable
+    private String[] events;
+
+    @Configurable
+    private long maxWaitingTime = 40;
+
+    private List<String> sensorsDataMapping;
+
+    private JsonArray sensorsData;
+
+    private HashMap<String, JsonArray> eventsDic;
+
+    private DataListener genericDataListener = new GenericDataListener();
+
+    private HashMap<String, Object> sensorsObjects = new HashMap<String, Object>();
+
+    private BroadcastReceiver genericEventReceiver;
+
+    private Boolean onEventProcessing = false;
+
+    private long startTime = 0;
+
+    private Runnable endOfTimeRunnable;
+    private String sessionUUID = null;
+    public Long lastTime = new Long(0);
+    @Override
+    protected void secureOnEnable()
+    {
+        super.secureOnEnable();
+        //        restart service!
+        String TAG = "Restart tag motion";
+        Long nowTime;
+        nowTime = System.currentTimeMillis();
+        SharedPreferences sp = getContext().getSharedPreferences("INTERVAL", Context.MODE_PRIVATE);
+        lastTime = sp.getLong("T2_interval", 0);
+        if (lastTime == null)
+            lastTime = 0L;
+        long diff = nowTime - lastTime;
+        Log.d(TAG, "T2 interval: Now: " + nowTime + " last: " + lastTime + " Diff" + diff);
+        if (diff > 60000 && lastTime!=0) {
+            Log.e(TAG, "Interval exceeded detected!" + Math.abs(lastTime - nowTime));
+            Intent intent = new Intent();
+            intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+            intent.putExtra("probe", "Traffic");
+            intent.setAction("com.bgu.congeor.sherlockapp.RestartFunfReciver");
+            getContext().sendBroadcast(intent);
+            Log.e(TAG, "Restart broadcast sent!");
+        }
+        lastTime = nowTime;
+        sp.edit().putLong("T1_interval", nowTime).commit();
+
+        IntentFilter filter = new IntentFilter();
+
+        if (events != null)
+        {
+            for (String event : events)
+            {
+                filter.addAction(event);
+            }
+        }
+        if (sensors != null)
+        {
+            for (String sensor : sensors)
+            {
+                try
+                {
+                    sensorsObjects.put(sensor, getGson().fromJson(DEFAULT_CONFIG, Class.forName(sensor)));
+                }
+                catch (ClassNotFoundException e)
+                {
+                    Logger.e(GenericEventBaseProbeT1.class, "Sensor " + sensor + " in generic event not found", e);
+                }
+            }
+        }
+
+
+        genericEventReceiver = new BroadcastReceiver()
+        {
+            @Override
+            public void onReceive(Context context, Intent intent)
+            {
+                synchronized (lock)
+                {
+                    if (!onEventProcessing)
+                    {
+                        Logger.i(GenericEventBaseProbeT1.class, "Get new event");
+
+                        onEventProcessing = true;
+                        startTime = System.currentTimeMillis();
+
+                        eventsDic = new HashMap<String, JsonArray>();
+                        JsonArray bundleList = new JsonArray();
+                        eventsDic.put(intent.getAction(), bundleList);
+
+                        if (intent.getExtras() != null)
+                        {
+                            if (intent.hasExtra(Constants.UUID))
+                            {
+                                sessionUUID = String.valueOf(new Date().getTime());
+                                //sessionUUID = intent.getStringExtra(Constants.UUID);
+                            }
+                            bundleList.add(getGson().toJsonTree(intent.getExtras()));
+                        }
+
+                        sensorsData = new JsonArray();
+                        sensorsDataMapping = new ArrayList<String>();
+
+                        for (Object sensorObject : sensorsObjects.values())
+                        {
+                            ((Base) sensorObject).registerListener(genericDataListener);
+                        }
+
+                        endOfTimeRunnable = new Runnable()
+                        {
+                            @Override
+                            public void run()
+                            {
+                                try
+                                {
+                                    synchronized (lock)
+                                    {
+                                        Logger.i(GenericEventBaseProbeT1.class, "Events waiting time over");
+
+                                        Set<String> sensorsKeys = new HashSet<String>(sensorsObjects.keySet());
+                                        sensorsKeys.removeAll(sensorsDataMapping);
+                                        for (String key : sensorsKeys)
+                                        {
+                                            ((Base) sensorsObjects.get(key)).unregisterListener(genericDataListener);
+                                        }
+                                        sensorsKeys = null;
+                                        sendSensorsData();
+                                    }
+                                }
+                                catch (Throwable t)
+                                {
+                                    sendErrorLog(t);
+                                }
+                                endOfTimeRunnable = null;
+                            }
+                        };
+                        getHandler().postDelayed(endOfTimeRunnable, TimeUtil.secondsToMillis(maxWaitingTime));
+
+                    }
+                    else
+                    {
+                        Logger.i(GenericEventBaseProbeT1.class, "Get new event BUT in prosses");
+                        if (eventsDic.containsKey(intent.getAction()))
+                        {
+
+                            if (intent.getExtras() != null)
+                            {
+                                eventsDic.get(intent.getAction()).add(getGson().toJsonTree(intent.getExtras()));
+                            }
+                        }
+                        else
+                        {
+                            JsonArray bundleList = new JsonArray();
+                            eventsDic.put(intent.getAction(), bundleList);
+
+                            if (intent.getExtras() != null)
+                            {
+                                bundleList.add(getGson().toJsonTree(intent.getExtras()));
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        getContext().registerReceiver(genericEventReceiver, filter);
+    }
+
+    @Override
+    protected void secureOnDisable()
+    {
+        super.secureOnDisable();
+        getContext().unregisterReceiver(genericEventReceiver);
+        onEventProcessing = false;
+    }
+
+    @Override
+    protected boolean isWakeLockedWhileRunning()
+    {
+        return false;
+    }
+
+    private void sendSensorsData()
+    {
+        try
+        {
+            if (endOfTimeRunnable != null)
+            {
+                getHandler().removeCallbacks(endOfTimeRunnable);
+                endOfTimeRunnable = null;
+            }
+        }
+        catch (Throwable t)
+        {
+
+        }
+
+        JsonObject dataToSend = new JsonObject();
+        JsonArray events = new JsonArray();
+        if (eventsDic != null)
+        {
+            for (String key : eventsDic.keySet())
+            {
+                JsonObject e = new JsonObject();
+                e.addProperty("Action", key);
+                e.addProperty("NumberOfOccurrences", eventsDic.get(key).size());
+                e.add("Extras", eventsDic.get(key));
+                events.add(e);
+            }
+
+            if (sessionUUID != null)
+            {
+                dataToSend.addProperty(Constants.UUID, sessionUUID);
+            }
+            dataToSend.add("Events", events);
+            dataToSend.add("value", sensorsData);
+
+            Logger.i(GenericEventBaseProbeT1.class, "Send data");
+
+            try
+            {
+                if(sensorsData != null)
+                {
+                    sendData(dataToSend);
+                }
+                else
+                {
+                    Logger.e(GeneralSampleProbeT1.class, " Generic T1 - Null Data has been detected");
+                }
+
+            }
+            catch (Throwable t)
+            {
+                t.printStackTrace();
+            }
+        }
+        else
+        {
+            Logger.e(getClass(), "eventsDic == null");
+        }
+        eventsDic = null;
+        startTime = 0;
+        sessionUUID = null;
+        sensorsDataMapping = null;
+        onEventProcessing = false;
+        sensorsData = null;
+        eventsDic = null;
+    }
+
+    private class GenericDataListener implements DataListener
+    {
+
+        @Override
+        public void onDataReceived(IJsonObject probeConfig, IJsonObject data)
+        {
+            try
+            {
+                String sensorName = probeConfig.getAsJsonObject().get("@type").getAsString();
+
+
+                if (sensorsDataMapping != null && !sensorsDataMapping.contains(sensorName))
+                {
+
+                    sensorsDataMapping.add(sensorName);
+
+                    JsonObject sd = new JsonObject();
+                    sd.addProperty("subProbeName", sensorName);
+                    sd.add("value", data);
+
+                    if (sensorsData != null)
+                    {
+                        sensorsData.add(sd);
+                    }
+
+                    ((Base) sensorsObjects.get(sensorName)).unregisterListener(genericDataListener);
+
+                    Logger.i(GenericEventBaseProbeT1.class, "Get new data from : " + sensorName);
+
+                }
+                if (sensorsData != null && (sensorsData.size() == sensors.length))
+                {
+
+                    synchronized (lock)
+                    {
+                        sendSensorsData();
+                    }
+
+                }
+            }
+            catch (Throwable t)
+            {
+                sendErrorLog(t);
+            }
+
+        }
+
+        @Override
+        public void onDataCompleted(IJsonObject probeConfig, JsonElement checkpoint)
+        {
+        }
+    }
+}
+
+
