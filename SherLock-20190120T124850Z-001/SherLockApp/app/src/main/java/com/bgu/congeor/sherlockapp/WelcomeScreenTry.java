@@ -93,19 +93,19 @@ public class WelcomeScreenTry extends BaseActivity {
             boolean exists = dir.exists();
             userData = Configuration.loadLocalConfiguration(getApplicationContext(), Constants.CONF_USER_DATA_HASHED, !exists);
             String hashedMail = userData.getKeyAsString(Constants.HASHED_MAIL);
-            if (hashedMail.equals("")) {
-                if (CongeorManager.getInstance().isInitialized()) {
-                    Intent intent = new Intent(this.getApplicationContext(), LoginActivity.class);
-                    startActivity(intent);
-                } else {
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            startProcess();
-                        }
-                    }, 900);
-                }
-            } else {
+//            if (hashedMail.equals("")) {
+//                if (CongeorManager.getInstance().isInitialized()) {
+//                    Intent intent = new Intent(this.getApplicationContext(), LoginActivity.class);
+//                    startActivity(intent);
+//                } else {
+//                    new Handler().postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            startProcess();
+//                        }
+//                    }, 900);
+//                }
+//            } else {
                 Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
                 intent.putExtra("LoginStatus", "logged");
                 startActivity(intent);
@@ -113,7 +113,7 @@ public class WelcomeScreenTry extends BaseActivity {
 //                Intent i = new Intent(getApplicationContext(), SensorService.class);
 //                startService(i);
                 finish();
-            }
+//            }
         } catch (IOException e) {
             Log.e(WelcomeScreenTry.class.toString(), "Failed to open Hashed data file");
         }
