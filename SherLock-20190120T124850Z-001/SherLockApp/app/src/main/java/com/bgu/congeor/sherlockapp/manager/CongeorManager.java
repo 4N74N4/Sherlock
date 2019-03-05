@@ -114,7 +114,7 @@ public class CongeorManager implements IAppContextProvider, IActivityProvider, A
             try
             {
                 fileListener = AgentManager.initInitialConfiguration(getAppContext());
-                userDetails = readUserDetails();
+//                userDetails = readUserDetails();
                 Configuration privateCommConfiguration = Configuration.loadLocalConfiguration(getAppContext(), Constants.CONF_PRIVATE_COMM_FILENAME, false);
                 experimentId = privateCommConfiguration.getKeyAsString(Constants.EXPERIMENT_ID);
                 version = privateCommConfiguration.getKeyAsString(Constants.VERSION);
