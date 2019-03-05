@@ -317,12 +317,12 @@ public class CongeorManager implements IAppContextProvider, IActivityProvider, A
         lastLoginTimestamp = System.currentTimeMillis();
         if (isFileListener())
         {
-            if (userDetails == null)
-            {
-                userDetails = new UserDetails("Danny");
-            }
-            CongeorManager.getInstance().setUserDetails(userDetails);
-            CongeorManager.getInstance().writeUserDetails();
+//            if (userDetails == null)
+//            {
+//                userDetails = new UserDetails("Danny");
+//            }
+//            CongeorManager.getInstance().setUserDetails(userDetails);
+//            CongeorManager.getInstance().writeUserDetails();
             if (runnable != null)
             {
                 runnable.run();
